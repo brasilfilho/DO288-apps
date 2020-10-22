@@ -23,9 +23,19 @@ echo "copiando os arquivos"
 cp -Rf /tmp/src/*.html /opt/app-root/src
 
 DATE=$(date "+%Y-%m-%d")
-echo "---> criando a pagina info.hmtml"
-echo "Pagina criada em $date" >> /opt/app-root/src/info.html
+echo "---> criando a pagina info.html"
+echo "Pagina criada em $DATE" >> /opt/app-root/src/info.html
 echo "adicionando segunda linha no info.html" >> /opt/app-root/src/info.html
+
+
+PWD=$(pwd)
+echo "---> criando a pagina info1.html"
+echo "---> pwd= $PWD"
+echo "---> copiada para ./ em $pwd" >> ./info1.html
+
+
+
+
 
 ######## CUSTOMIZATION ENDS HERE ############
 
