@@ -20,12 +20,19 @@ echo "---> Installing application source"
 #echo "Proudly served by Apache HTTP Server version $HTTPD_VERSION" >> ./info.html
 
 echo "copiando os arquivos"
-cp -Rf /tmp/src/*.html /opt/app-root/src
+#cp -Rf /tmp/src/*.html /opt/app-root/src
+cp -Rf /tmp/src/*.* /opt/app-root/src
 
 DATE=$(date "+%Y-%m-%d")
-echo "---> criando a pagina info.html"
-echo "Pagina criada em $DATE" >> /opt/app-root/src/info.html
-echo "adicionando segunda linha no info.html" >> /opt/app-root/src/info.html
+echo "---> criando info.html)"
+echo "---> data: $DATE"
+echo "---> conteduo de pagina: $DATE" >> /opt/app-root/src/info.html
+echo "---> criando segunda linha no info.hml" >> /opt/app-root/src/info.html
+
+#DATE=$(date "+%Y-%m-%d")
+#echo "---> criando a pagina info.html"
+#echo "Pagina criada em $DATE" >> /opt/app-root/src/info.html
+#echo "adicionando segunda linha no info.html" >> /opt/app-root/src/info.html
 
 
 PWD=$(pwd)
